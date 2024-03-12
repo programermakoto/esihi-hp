@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="【エイ・シー理念】
+  ITを起点に、日本の社会問題を解決するサービスを常に提供し、日本人の物心両面の幸福を創造する" />
+  <title>株式会社エイ・シー</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="JS/three.js" defer></script>
+  <script src="JS/main.js" defer></script>
+  <script src="JS/menu.js" defer></script>
+  <style>
+    .animated-element {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1.5s ease forwards;
+      animation-delay: var(--delay);
+    }
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body id="navArea">
+  <div id="animation"></div>
+  <canvas id="myCanvas"></canvas>
+  <header class="scrolled">
+    <div class="logo-title">
+      <h2><img src="images/eishilogo.WEBP" style="width: 100px;"></h2>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HTML/service.html">Services</a></li>
+        <li><a href="HTML/about.html">about us</a></li>
+        <li><a href="HTML/recruitment.html">Recruitment</a></li>
+        <li><a href="HTML/programming.html">Programming</a></li>
+        <li><a href="https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h3>株式会社</h3>
+    <h1>エイ・シー</h1>
+    <p>ITを起点に、日本の社会問題を解決するサービスを
+      常に提供し、日本人の物心両面の幸福を創造する
+    </p>
+    <div id="target-2"></div>
+  </div>
+  <div class="services">
+    <div class="services-title">
+      <h1 class="animate">Services</h1>
+      <small class="animate delay">サービス</small><br>
+      <p class="animate delay-more">私たちエイ・シーの事業について</p>
+      <button class="animate delay-more-more" onclick="location.href='HTML/service.html'">View more</button>
+    </div>
+    <div class="services-intro">
+      <a href="HTML/recruitment.html">
+        <h1 class="animate delay-more-more">Recruitment</h1>
+        <small>初めてのキャリアを選ぶ、転職サイト</small>
+      </a>
+      <a href="HTML/programming.html">
+        <h1 class="animate delay-more-more-more">Programming</h1>
+        <small>次のキャリアを目指す、プログラミングスクール</small>
+      </a>
+    </div>
+  </div>
+  <div class="about">
+    <div class="about-inner">
+      <h1 class="animate">About us</h1>
+    </div>
+    <div class="about-section">
+      <div class="about-title">
+        <h1 class="animate">enrich your career</h1>
+        <small class="animate delay">キャリアを豊かにする</small>
+        <p class="animate delay-more">社会人になってから10年で人の生涯年収は決まると
+          アメリカの研究データで出ています。<br>
+          最初の10年が一番将来に直結するので1人1人が<br>
+          自身のキャリアに真剣に向き合うことで
+          キャリアの選択肢が増え人生がより豊かに..</p>
+        <button class="animate delay-more-more" onclick="location.href='HTML/about.html'">View more</button>
+      </div>
+      <div class="about-intro">
+        <div>
+          <h1 class="animate">クライアントファーストの集団</h1>
+        </div>
+        <div>
+          <h1 class="animate delay">常に挑戦する企業であること</h1>
+        </div>
+        <div>
+          <h1 class="animate delay-more">自責思考をもつ</h1>
+        </div>
+        <div>
+          <h1 class="animate delay-more-more">信頼され頼られる存在へ</h1>
+        </div>
+        <div>
+          <h1 class="animate delay-more-more-more">現状に満足しない</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="news">
+    <h2 class="sub_ttl animate">NEWS</h2>
+    <ul class="news_list">
+      <li class="news_list_item">
+        <a href="">
+          <div class="news_list_date">
+            <time>2020.05.12</time>
+            <p class="news_item">お知らせ</p>
+          </div>
+          <p>サイトリニューアルしました。</p>
+          <span class="arrow"></span>
+        </a>
+      </li>
+      <li class="news_list_item">
+        <a href="">
+          <div class="news_list_date">
+            <time>2020.05.12</time>
+            <p class="news_item">お知らせ</p>
+          </div>
+          <p>サイトリニューアルしました。</p>
+          <span class="arrow"></span>
+        </a>
+      </li>
+      <li class="news_list_item">
+        <a href="">
+          <div class="news_list_date">
+            <time>2020.05.12</time>
+            <p class="news_item">お知らせ</p>
+          </div>
+          <p>サイトリニューアルしました。</p>
+          <span class="arrow"></span>
+        </a>
+      </li>
+      <li class="news_list_item">
+        <a href="">
+          <div class="news_list_date">
+            <time>2020.05.12</time>
+            <p class="news_item">お知らせ</p>
+          </div>
+          <p>記事が更新されました。記事が更新されました。記事が更新されました。記事が更新されました。</p>
+          <span class="arrow"></span>
+        </a>
+      </li>
+      <li class="news_list_item">
+        <a href="">
+          <div class="news_list_date">
+            <time>2020.05.12</time>
+            <p class="news_item">お知らせ</p>
+          </div>
+          <p>サイトリニューアルしました。</p>
+          <span class="arrow"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="recruitment">
+    <div class="rl">
+      <h1 class="animate">Recruitment</h1>
+      <small class="animate delay">人材紹介業務</small>
+      <p class="animate delay-more"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur sint optio
+        officia obcaecati quas sapiente
+        facere alias eos ipsum blanditiis. Architecto tempore voluptas ullam ipsum culpa perferendis nostrum labore
+        reiciendis.</p>
+      <button class="animate delay-more-more" onclick="location.href='HTML/recruitment.html'">View more</button>
+    </div>
+    <div class="rr">
+      <h1><span class="animate">キャ</span><span class="animate delay">リ</span><span
+          class="animate delay-more">ア</span><span class="animate delay-more-more">を</span><span
+          class="animate delay-more-more-more">豊</span><span class="animate delay-more-more-more-more">か</span><span
+          class="animate delay-more-more-more-more-more">に</span></h1>
+      <p>私達は当社設立前からコンサルティング事業や<br>
+        キャリアアドバイザーとして様々な社会人の方と<br>
+        面談をしてきました。<br><br>
+
+        面談する方の9割が将来どうなりたいか考えずに<br>
+        仕事を漠然と選んでいる印象でした。<br>
+        アメリカの研究データによれば<br>
+        社会人になり10年で生涯年収は9割決まると言われております。
+        「若いからまだ大丈夫」ではなく若いからこそ自分自身のキャリアを真剣に考えることが重要だと考えております。<br><br>
+        当社ではご縁をいただいた皆様に<br>
+        キャリアを豊かにすることで得られる幸福度アップの実現のため一緒に<br>将来について真剣に考えていき<br>この先信頼されつづける企業になれるよう日々成長してまいります。</p>
+    </div>
+
+  </div>
+  <div class="programming">
+    <div class="pl">
+      <h1 class="animate">Programming</h1>
+      <small class="animate delay">プログラミングスクール事業</small>
+      <p class="animate delay-more">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum debitis dignissimos,
+        nemo accusantium quae enim
+        ipsum atque soluta saepe autem omnis ea maxime harum voluptatibus vel quis repellendus labore iusto.</p>
+      <button class="animate delay-more-more" onclick="location.href='HTML/programming.html'">View more</button>
+    </div>
+    <div class="pr">
+      <h1 class="animate"><span class="animate">キャ</span><span class="animate delay">リ</span><span
+          class="animate delay-more">ア</span><span class="animate delay-more-more">テック</span><span
+          class="animate delay-more-more-more">に</span><span class="animate delay-more-more-more-more">つ</span><span
+          class="animate delay-more-more-more-more-more">い</span><span class="animate delay-more3">て</span>
+      </h1>
+      <h2 class="animate delay-more-more"><mark>未経験からフリーランスになることを実現する</mark></h2>
+      <p class="animate delay-more-more-more">直近、未経験からWEBエンジニアに転職する方やフリーランスを目指す方が増えてきている傾向にあります。</p>
+      <p class="animate delay-more3">その中で案件を獲得していくには、履歴書のほかにポートフォリオを提出して自分のスキル感を伝えることでライバルに差をつけることができます。</p>
+    </div>
+  </div>
+  <div class="contact-form-psr" style="width:100%;height:1655px;overflow:visible;">
+    <div class="f-t">
+      <h1>お問い合わせフォーム</h1>
+    </div>
+    <div class="f-b">
+      <p>その他関係者について</p>
+      <div class="last-form">
+        <ul>
+          <li class="makoto"><a href="#">エンジニアHP</a></li>
+          <li class="uc"><a href="#">UCホールディングスHP</a></li>
+        </ul>
+      </div>
+    </div>
+    <iframe
+      src="https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/" width="100%" height="100%"> 
+    </iframe>
+    </div>
+  <div class="footer">
+    <div class="fl">
+      <img src="images/eishilogo.WEBP" style="width: 100px;">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HTML/service.html">Services</a></li>
+        <li><a href="HTML/about.html">about us</a></li>
+        <li><a href="HTML/recruitment.html">Recruitment</a></li>
+        <li><a href="HTML/programming.html">Programming</a></li>
+        <li><a href="https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/">Contact</a></li>
+      </ul>
+      <ul>
+        <li><a href="HTML/about.html#about"><u>特定商法</u></a></li>
+        <li><a href="HTML/privacy.html"><u>プライバシポリシー</u></a></li>
+      </ul>
+    </div>
+    <div class="fr">
+      <button
+        onclick="location.href='https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/'">Contact</button>
+      <br>
+      <small>Copyright 2024 株式会社エイ・シー<br>All Righta Reserved</small>
+    </div>
+    <a href="#" id="to_top">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </a>
+  </div>
+  <!-- ハンバーガーバ--------------------------------------------------------------- -->
+  <nav class="nv">
+    <div class="inner">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="HTML/service.html">Services</a></li>
+        <li><a href="HTML/about.html">about us</a></li>
+        <li><a href="HTML/about.html#about">特定商法</a></li>
+        <li><a href="HTML/privacy.html">プライバシポリシー</a></li>
+      </ul>
+      <ul>
+        <li><a href="HTML/recruitment.html">Recruitment</a></li>
+        <li><a href="HTML/programming.html">Programming</a></li>
+        <li><a href="https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/">Contact</a></li>
+        <h2>株式会社エイ・シー</h2>
+
+        <p><b>Address</b><br><br>
+          〒150-0031<br><br>
+          大阪府大阪市中央区南船場3-11-10心斎橋太陽ビル408</p>
+        <p>call:090-7765-3979</p>
+        <p>mail:zinzai1101eishi@gmail.com</p>
+      </ul>
+    </div>
+  </nav>
+  <!-- ハンバーガーバーを直書きコード -->
+  <div class="toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- 背景を一時変える時のid -->
+  <div id="mask"></div>
+  <!-- ハンバーガーバ終わり--------------------------------------------------------------- -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"
+    integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
