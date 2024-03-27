@@ -359,7 +359,7 @@ header ul a {
 .about .about-section .about-title h1 {
   color: black;
   font-size: 5rem;
-  padding: 40px 0 0 40px;
+  padding: 40px 0 20px 40px;
   margin-left: 50px;
   text-align: center;
 }
@@ -369,8 +369,8 @@ header ul a {
 }
 .about .about-section .about-title p {
   margin-left: 140px;
-  margin-top: 20px;
-  line-height: 2;
+  margin-top: 40px;
+  line-height: 2.2;
 }
 .about .about-section .about-intro {
   width: 60%;
@@ -517,6 +517,7 @@ header ul a {
 .programming .pl h1 {
   font-size: 5rem;
   margin-left: 110px;
+  margin-bottom: 10px;
 }
 .programming .pl small {
   display: block;
@@ -596,16 +597,6 @@ header ul a {
   cursor: pointer;
   color: black;
   font-weight: bold;
-}
-.contact-form-psr .f-b .last-form ul .makoto {
-  background-image: url("/images/resource-database-ZN35I_jq7_M-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.contact-form-psr .f-b .last-form ul .uc {
-  background-image: url("/images/resource-database--R7raVu_isU-unsplash.jpg");
-  background-size: cover;
-  background-position: center;
 }
 
 .footer {
