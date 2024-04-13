@@ -135,4 +135,161 @@
   position: fixed;
 }
 // main----------------------------------------------------------------------
+// sec01
+.sec01{
+  padding: 10%;
+  writing-mode: vertical-rl;
+  width: 100%;
+  height: 100vh;
+  p{
+    font-size: 1.5rem;
+    width: 60%;
+    line-height:2;
+  }
+  h1{
+    width: 40%;
+    font-size: 6rem;
+  }
+}
+// sec02
+.sec02{
+  width: 100%;
+  height: 100vh;
+  font-weight: bold;
+  background-image: url(../images/resource-database--R7raVu_isU-unsplash\ 2.jpg);
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  background-color: antiquewhite;
+  position: relative;
+  h1{
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-size: 4rem;
+    padding:30px;
+  }
+  p{
+    width: 50%;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    z-index: 2;
+    font-size: 1.4rem;
+    padding:30px;line-height: 1.6;
+    letter-spacing: 5px;
+  }
+  span{
+    font-size:2rem;
+  }
+}
+// sec03
+.sec03{
+  width: 100%;
+  height: 70vh;
+  font-weight: bold;
+  object-fit: cover;
+  position: relative;
+  h1{
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-size: 4rem;
+    padding:30px;
+  }
+  p{
+    width: 50%;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    z-index: 2;
+    font-size: 1.4rem;
+    padding:30px;line-height: 1.6;
+    letter-spacing: 5px;
+  }
 
+}
+// sec04
+.sec04{
+  width: 100%;
+  height: 100vh;
+  font-weight: bold;
+  background-color:rgba(255, 166, 0, 0.715);
+  object-fit: cover;
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  position: relative;
+  h1{
+    position: absolute;
+    top: 20%;
+    z-index: 2;
+    font-size: 4rem;
+    padding:30px;
+  }
+  p{
+    width: 50%;
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    z-index: 2;
+    font-size: 1.4rem;
+    padding:30px;line-height: 1.6;
+    letter-spacing: 5px;
+  }
+  span{
+    font-size:2rem;
+  }
+}
+
+.footer{
+  width: 100%;
+  height: 40vh;
+  padding: 90px;
+  display: flex;
+  a{
+    text-decoration: none;
+  }
+  .fl{
+    width: 80%;
+    height: 100%;
+    h3{
+      margin: 2%;
+      text-align: left;
+    }
+    ul{
+      display: flex;
+      list-style: none;
+      li{
+        margin-top: 20px;
+      }
+      a{
+        color: black;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+        font-size: 15px;
+      }
+    }
+  }
+  .fr{
+    small{
+      line-height: 2;
+    }
+    button {
+      font-size: 20px;
+      font-weight: 500;
+      margin: 20px 0 40px 0px;
+      padding: 20px 60px;
+      transition: 0.4s;
+      cursor: pointer;
+      color:white;
+      background: rgba(0, 0, 0, 0.72);
+      border: 1px solid white;
+    }
+    
+    button:hover {
+      background-color:white;
+      color: black ;
+      border: 1px solid black;
+    }
+  }
+}

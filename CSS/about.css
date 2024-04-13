@@ -295,6 +295,9 @@ nav .inner li a {
   width: 80%;
   height: 100%;
 }
+.footer .fl h3 {
+  margin: 2%;
+}
 .footer .fl ul {
   display: flex;
   list-style: none;
