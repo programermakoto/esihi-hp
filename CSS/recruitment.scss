@@ -4,6 +4,19 @@
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
+// animate API. --------------------------------------------------
+.animate.appear {
+  opacity: 1;
+  /*jsでクラスついた時に見せる*/
+  transform: none;
+  /*移動していたものを戻す*/
+}
+.animate {
+  opacity: 0;
+  /*初期値は見えなく*/
+  transition: opacity 2s, transform .5s;
+  /*見えるようにするまでの時間指定*/
+}
 // ハンバーガーバー-----------------------------------------------
 .open nav {
   left: 0;

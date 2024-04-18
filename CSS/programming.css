@@ -118,7 +118,7 @@ main::after {
 
 .title {
   position: absolute;
-  top: 15%;
+  top: 10%;
   left: 50%;
   font-size: 1.8rem;
   transform: translateX(-50%);
@@ -530,7 +530,8 @@ header .scrolled {
 }
 
 .common-3 {
-  background-color: rgba(157, 157, 247, 0.443);
+  width: 100%;
+  height: auto;
 }
 .common-3 .about-inner {
   position: relative;
@@ -548,26 +549,33 @@ header .scrolled {
   position: absolute;
   top: 20%;
 }
-.common-3 .faq-area_inner {
+.common-3 .common-in {
   box-sizing: border-box;
-  text-align: left;
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(157, 157, 247, 0.443);
 }
-.common-3 .faq-area_inner h3 {
-  margin: 20px 0;
+.common-3 .common-in .person {
+  padding: 30px;
+  width: 25%;
+  background-color: white;
+  border: 1px solid black;
+}
+.common-3 .common-in .person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
 }
 
-.common-4 {
-  width: 100%;
-  height: auto;
-}
 .common-4 .about-inner {
   position: relative;
   background-attachment: fixed;
   background-image: url(../images/flower.jpg);
   background-size: cover;
   background-position: center;
-  height: 30vh;
+  height: 100vh;
 }
 .common-4 .about-inner h1 {
   width: 100%;
@@ -577,43 +585,7 @@ header .scrolled {
   position: absolute;
   top: 20%;
 }
-.common-4 .common-in {
-  box-sizing: border-box;
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  background-color: rgba(157, 157, 247, 0.443);
-}
-.common-4 .common-in .person {
-  padding: 30px;
-  width: 25%;
-  background-color: white;
-  border: 1px solid black;
-}
-.common-4 .common-in .person img {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-}
-
-.common-5 .about-inner {
-  position: relative;
-  background-attachment: fixed;
-  background-image: url(../images/flower.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-}
-.common-5 .about-inner h1 {
-  width: 100%;
-  color: rgba(0, 0, 0, 0.471);
-  text-align: center;
-  font-size: 5em;
-  position: absolute;
-  top: 20%;
-}
-.common-5 a {
+.common-4 a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.471);
   width: 40%;
@@ -628,7 +600,7 @@ header .scrolled {
   right: 30%;
   border-radius: 50px;
 }
-.common-5 a:hover {
+.common-4 a:hover {
   background-color: white;
   color: orange;
   border: 2px solid orange;

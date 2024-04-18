@@ -1,8 +1,23 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
+}
+
+.animate.appear {
+  opacity: 1;
+  /*jsでクラスついた時に見せる*/
+  transform: none;
+  /*移動していたものを戻す*/
+}
+
+.animate {
+  opacity: 0;
+  /*初期値は見えなく*/
+  transition: opacity 2s, transform 0.5s;
+  /*見えるようにするまでの時間指定*/
 }
 
 .open nav {

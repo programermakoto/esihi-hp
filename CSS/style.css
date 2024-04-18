@@ -286,7 +286,7 @@ header ul a {
 .services {
   margin: 0;
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   display: flex;
 }
 .services .services-title {
@@ -330,80 +330,6 @@ header ul a {
 }
 .services .services-intro a:hover {
   transform: translateX(50px);
-}
-
-.about {
-  width: 100%;
-}
-.about .about-inner {
-  position: relative;
-  background-attachment: fixed;
-  background-image: url(../images/b.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 50vh;
-}
-.about .about-inner h1 {
-  width: 100%;
-  color: #fff;
-  text-align: center;
-  font-size: 10em;
-  position: absolute;
-  top: 20%;
-}
-.about .about-section {
-  display: flex;
-  width: 100%;
-  height: 100vh;
-}
-.about .about-section .about-title {
-  width: 40%;
-}
-.about .about-section .about-title h1 {
-  color: black;
-  font-size: 5rem;
-  padding: 40px 0 20px 40px;
-  margin-left: 50px;
-  text-align: center;
-}
-.about .about-section .about-title small {
-  display: block;
-  margin-left: 140px;
-}
-.about .about-section .about-title p {
-  margin-left: 140px;
-  margin-top: 40px;
-  line-height: 2.2;
-}
-.about .about-section .about-intro {
-  width: 60%;
-  padding: 90px 30px 0;
-  margin-top: 10%;
-}
-.about .about-section .about-intro h1 {
-  position: relative;
-  display: inline-block;
-  padding: 30px 55px;
-  color: rgb(106, 105, 105);
-}
-.about .about-section .about-intro div {
-  text-align: center;
-}
-.about .about-section .about-intro h1:before,
-.about .about-section .about-intro h1:after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  display: inline-block;
-  width: 45px;
-  height: 1px;
-  background-color: black;
-}
-.about .about-section .about-intro h1:before {
-  left: 0;
-}
-.about .about-section .about-intro h1:after {
-  right: 0;
 }
 
 .news {
