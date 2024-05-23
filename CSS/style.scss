@@ -163,7 +163,7 @@ button:hover {
 .animate {
   opacity: 0;
   /*初期値は見えなく*/
-  transition: opacity 2s, transform .5s;
+  transition: opacity 2s, transform 0.5s;
   /*見えるようにするまでの時間指定*/
 }
 
@@ -179,27 +179,22 @@ button:hover {
 
 .animate.delay-more {
   transition-delay: 0.4s;
-
 }
 
 .animate.delay-more-more {
   transition-delay: 0.6s;
-
 }
 
 .animate.delay-more-more-more {
   transition-delay: 0.8s;
-
 }
 
 .animate.delay-more-more-more-more {
   transition-delay: 1s;
-
 }
 
 .animate.delay-more-more-more-more-more {
   transition-delay: 1.2s;
-
 }
 
 .animate.delay-more3 {
@@ -350,7 +345,8 @@ header {
     margin-top: 10%;
 
     a {
-      font-family: jaf-bernina-sans, Hiragino Kaku Gothic Pro, Meiryo, Noto Sans JP, sans-serif;
+      font-family: jaf-bernina-sans, Hiragino Kaku Gothic Pro, Meiryo,
+        Noto Sans JP, sans-serif;
       width: 100%;
       background-color: white;
       display: block;
@@ -368,7 +364,6 @@ header {
     }
   }
 }
-
 
 // news------------------------------------------------------
 .news {
@@ -392,11 +387,11 @@ header {
 
   .news_list_item {
     padding: 25px 0;
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
   }
 
   .news_list_item:first-child {
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
   }
 
   .news_list_item a {
@@ -441,7 +436,6 @@ header {
     right: 0px;
     bottom: 2px;
   }
-
 }
 
 // recruitment------------------------------------------------------
@@ -578,20 +572,17 @@ header {
   }
 }
 
-
 // footer------------------------------------------------------
 .footer {
   width: 100%;
   height: 40vh;
   padding: 90px;
   display: flex;
-
   .fl {
     width: 80%;
     height: 100%;
 
     h3 {
-
       margin-left: 2%;
     }
 
@@ -635,6 +626,458 @@ header {
       background-color: white;
       color: black;
       border: 1px solid black;
+    }
+  }
+}
+// sp=======================================================
+@media (min-width: 0) and (max-width: 390px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .logo-title h2 {
+    font-size: 1.1rem;
+  }
+  header ul {
+    display: none;
+  }
+  .toggle {
+    width: 30px;
+    height: 20px;
+
+    position: fixed;
+    top: 10px;
+    right: 20px;
+  }
+  .toggle span {
+    width: 30px;
+    background-color: white;
+    height: 2px;
+  }
+  .toggle :nth-child(1) {
+    top: 15px;
+  }
+  .toggle :nth-child(2) {
+    top: 25px;
+  }
+  .toggle :nth-child(3) {
+    top: 35px;
+  }
+  /* canvaの上の文字 */
+  .hero {
+    width: 100%;
+    height: 100vh;
+  }
+  .hero h1 {
+    font-size: 20px;
+    width: 80%;
+    position: absolute;
+    top: 300px;
+    right: 30px;
+    color: #fff;
+  }
+  #myCanvas {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  /* services */
+
+  .services {
+    flex-direction: column;
+    .services-title {
+      width: 100%;
+      padding: 0;
+      h1 {
+        font-size: 40px;
+        padding: 20px 0 0;
+        width: 100%;
+      }
+      small {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+      }
+
+      p {
+        padding: 0;
+      }
+      button {
+        margin: 10px auto;
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+
+    .services-intro {
+      width: 100%;
+      padding: 20px;
+      margin: 0;
+      a {
+        width: 100%;
+        font-size: 10px;
+      }
+
+      a:hover {
+        transform: translateX(50px);
+      }
+    }
+  }
+
+  // news
+
+  .news {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    flex-direction: column;
+
+    .sub_ttl {
+      font-size: 40px;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+
+    .news_list {
+      width: 100%;
+      padding: 20px;
+      list-style: none;
+      margin: 0;
+    }
+
+    .news_list_item {
+      padding: 0;
+      width: 100%;
+    }
+
+    .news_list_item a {
+      position: relative;
+      flex-direction: column;
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+    .news_list_date {
+      font-size: 15px;
+      display: flex;
+      padding: 20px 0;
+    }
+    p {
+      width: 90%;
+      padding: 5px;
+      font-size: .77rem;
+    }
+    .news_item {
+      width: 20%;
+      padding: 0;
+      text-align: center;
+      margin-left: 50px;
+    }
+
+    .arrow {
+      width: 25px;
+      top: 60%;
+    }
+  }
+  // recruitment--------------
+  .recruitment {
+    width: 100%;
+    flex-direction: column;
+    padding: 0px;
+    margin: 50px 0 30px 0;
+    box-sizing: border-box;
+
+    .rl {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      h1 {
+        font-size: 40px;
+        margin: 0;
+        text-align: center;
+      }
+
+      small {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      p {
+        display: none;
+      }
+      button {
+        margin: 30px auto;
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+
+    .rr {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      h1 {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      p {
+        margin: 0 auto;
+        width: 80%;
+        height: 500px;
+        font-size: 15px;
+        line-height: 2;
+        overflow-y: scroll;
+      }
+    }
+  }
+  // programming------------------------------------------------------
+  .programming {
+    width: 100%;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 250px;
+
+    .pl {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+
+      small {
+        display: block;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      p {
+        margin: 0;
+        display: none;
+      }
+      button {
+        margin: 30px auto;
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+
+    .pr {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+      h1 {
+        font-size: 15px;
+        padding-top: 100px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+      h2 {
+        font-size: 13px;
+        margin: 0;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+      p {
+        font-size: 13px;
+        padding: 20px;
+        box-sizing: border-box;
+        line-height: 1.5;
+        margin-top: 0px;
+      }
+    }
+  }
+
+  // 問い合わせform------------------------------------------------------
+  .contact-form-psr {
+    position: relative;
+
+    .f-t {
+      background-color: white;
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      top: 0%;
+      z-index: 2;
+
+      h1 {
+        border-top: 1px solid;
+        text-align: center;
+        // padding-top: 20px;
+        padding: 20px;
+        font-size: 20px;
+      }
+    }
+
+    .f-b {
+      background-color: white;
+      width: 100%;
+      height: 10%;
+      position: absolute;
+      bottom: 0%;
+      z-index: 2;
+      text-align: center;
+
+      .last-form {
+        width: 100%;
+        background-color: white;
+      }
+    }
+  }
+
+  // footer------------------------------------------------------
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    .fl {
+      width: 100%;
+
+      h3 {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      ul {
+        flex-direction: column;
+        li {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .fr {
+      width: 100%;
+
+      small {
+        line-height: 1.5;
+      }
+
+      button {
+        margin: 30px auto;
+        display: block;
+        padding: 10px 20px;
+      }
+    }
+  }
+  #to_top i {
+    font-size: 25px;
+  }
+  .open .toggle span {
+    background-color: white;
+  }
+
+  // nav-----------
+  .nv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    .inner {
+      padding: 10px;
+      margin: 0;
+
+      ul {
+        list-style: none;
+        width: 50%;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        h2 {
+          padding: 0px;
+          font-size: 15px;
+        }
+
+        p {
+          padding: 5px;
+          text-align: center;
+          font-size: 10px;
+        }
+
+        li {
+          width: 99%;
+          height: 100px;
+          padding: 0;
+          box-sizing: border-box;
+          margin: 0 3px 10px;
+          a {
+            box-sizing: border-box;
+            display: block;
+            width: 100%;
+            height: 100px;
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  // footer------------------------------------------------------
+  .footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    .fl {
+      width: 100%;
+      height: 100%;
+      h3{
+        text-align: center;
+        box-sizing: border-box;
+        padding: 20px;
+      }
+      ul {
+        width:80%;
+        margin: 0 auto;
+        display: flex;
+        list-style: none;
+        flex-wrap: wrap;
+        li {
+          box-sizing: border-box;
+          width: 60%;
+          margin: 2px auto;
+          border: 1px solid;
+          border-right: none;
+          border-top: none;
+          border-left: 3px solid;
+
+        }
+
+        a {
+          box-sizing: border-box;
+          color: black;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          padding: 10px 20px;
+          font-size: 15px;
+          text-decoration: none;
+        }
+      }
+    }
+
+    .fr {
+      box-sizing: border-box;
+      padding: 20px;
+      button {
+        display:block;
+        margin: 0 auto;
+      }
     }
   }
 }

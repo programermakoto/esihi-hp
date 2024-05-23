@@ -299,4 +299,166 @@
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+@media (min-width: 0) and (max-width: 390px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  .footer .fl {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .fl h3 {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .footer .fl ul {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .footer .fl ul li {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 2px auto;
+    border: 1px solid;
+    border-right: none;
+    border-top: none;
+    border-left: 3px solid;
+  }
+  .footer .fl ul a {
+    box-sizing: border-box;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .footer .fr {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .footer .fr small {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  .footer .fr button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  .sec01 {
+    padding: 10%;
+    writing-mode: horizontal-tb;
+  }
+  .sec01 p {
+    font-size: 0.8rem;
+    width: 100%;
+    margin-top: 50px;
+    line-height: 2;
+  }
+  .sec01 h1 {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  .sec02 {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    background-color: antiquewhite;
+  }
+  .sec02 h1 {
+    font-size: 1.5rem;
+  }
+  .sec02 p {
+    width: 100%;
+    right: 0%;
+    font-size: 0.8rem;
+  }
+  .sec02 span {
+    font-size: 1rem;
+  }
+  .sec03 {
+    height: 50vh;
+  }
+  .sec03 h1 {
+    position: absolute;
+    top: 0%;
+    z-index: 2;
+    font-size: 1.5rem;
+    padding: 30px;
+  }
+  .sec03 p {
+    width: 100%;
+    top: 30%;
+    right: 0;
+    font-size: 0.8rem;
+  }
+  .sec04 h1 {
+    top: 20%;
+    font-size: 1.5rem;
+  }
+  .sec04 p {
+    width: 100%;
+    top: 40%;
+    right: 0%;
+    z-index: 2;
+    font-size: 0.8rem;
+  }
+  .nv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .nv .inner {
+    padding: 10px;
+    margin: 0;
+  }
+  .nv .inner ul {
+    list-style: none;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .nv .inner ul h2 {
+    padding: 0px;
+    font-size: 15px;
+  }
+  .nv .inner ul p {
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .nv .inner ul li {
+    width: 99%;
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 3px 10px;
+  }
+  .nv .inner ul li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=recruitment.css.map */

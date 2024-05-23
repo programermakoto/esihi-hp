@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head id="navArea">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="【エイ・シー理念】
   ITを起点に、日本の社会問題を解決するサービスを常に提供し、日本人の物心両面の幸福を創造する" />
   <title>株式会社エイ・シー</title>
+  <link rel="icon" href="../images/logojpg.jpg">
   <link rel="stylesheet" href="../CSS/service.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="../JS/menu.js" defer></script>
   <script src="../JS/card.js" defer></script>
   <script src="../JS/main.js" defer></script>
 </head>
-<body>
+
+<body id="navArea">
+  <!-- ハンバーガーバ--------------------------------------------------------------- -->
+  <nav class="nv">
+    <div class="inner">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="about.html">about us</a></li>
+        <li><a href="about.html#about">特定商法</a></li>
+        <li><a href="privacy.html">プライバシポリシー</a></li>
+      </ul>
+      <ul>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="programming.html">Programming</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <h2>株式会社エイ・シー</h2>
+        <p><b>Address</b><br><br>
+          〒530-0057<br><br>
+          大阪府大阪市北区曾根崎2丁目5-10　梅田パシフィックビルディング 4F</p>
+        <p>call:090-7765-3979</p>
+        <p>mail:zinzai1101eishi@gmail.com</p>
+      </ul>
+    </div>
+  </nav>
+  <!-- ハンバーガーバーを直書きコード -->
+  <div class="toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+  <!-- 背景を一時変える時のid -->
+  <div id="mask"></div>
   <!-- main--------------------------------------------------------------- -->
   <section>
     <video src="../images/smoke.mp4" autoplay muted
@@ -30,25 +64,34 @@
   <div class="cards-wrapper">
     <div class="cards-container">
       <div class="service_list">
-        <li data-title="人材紹介業" data-description="      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt porro atque debitis veritatis non doloribus quod, numquam accusamus delectus? Hic maiores ullam officiis a necessitatibus ut aperiam eos. Facilis." class="selected" style="background-image:url(../images/zinnzai.jpg);" >
+        <li href="" data-title="人材紹介業"
+          data-description="人と企業
+          つなげていくのがお仕事。<br><br>当社ではご縁をいただいた皆様にキャリアを豊かに<br><br>することで得られる幸福度アップの実現のため一緒に<br><br>将来について真剣に考えていきこの先信頼され<br><br>つづける企業になれるよう日々成長してまいります
+          "
+          class="selected" style="background-image:url(../images/zinnzai.jpg);">
         </li>
-        <li data-title="ITスクール" data-description="      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt porro atque debitis veritatis non doloribus quod, numquam accusamus delectus? Hic maiores ullam officiis a necessitatibus ut aperiam eos. Facilis." style="background-image:url(../images/hacker.jpg);">
+        <li data-title="ITスクール"
+          data-description="直近、未経験からWEBエンジニアに転職する方や<br><br>フリーランスを目指す方が増えてきている傾向にあります。<br>その理由の一つは時間と場所に縛られない働き方などあります。<br><br>その中で案件を獲得していくには、履歴書のほかに<br><br>ポートフォリオを提出して自分のスキルや実績を<br><br>伝えることでライバルに差をつけることができます。"
+          style="background-image:url(../images/1.png);">
         </li>
       </div>
-      <section class="card card_animated">
+       <section class="card card_animated">
         <div class="card_inner">
           <div class="card-header">
-            <div class="service-pic" style="background-image: url(../images/b.jpg);">
+            <div class="service-pic" style="background-image: url(../images/logojpg.jpg);">
             </div>
             <h2 class="service_title"> About service</h2>
+            
           </div>
           <div class="service_description">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis maxime corrupti officiis enim autem?
-              Cumque facilis facere labore consequuntur veritatis.</p>
+            <p>当社ではIT事業と人材紹介業の2つの事業サービスがあります</p>
+            <a class="btn" href="../HTML/programming.html">ITサービスについて</a>
+            <a class="btn" href="../HTML/recruitment.html">人材紹介業について</a>
           </div>
         </div>
-      </section>
+      </section> 
     </div>
+    
     <div class="bg-radius">
       <span id="radius1"></span>
       <span id="radius2"></span>
@@ -56,31 +99,8 @@
       <span id="radius4"></span>
       <span id="radius5"></span>
       <span id="radius6"></span>
-    </div>
-  </div>
-  <div class="footer">
-    <div class="fl">
-      <h3>株式会社エイ・シー</h3>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="service.html">Services</a></li>
-        <li><a href="about.html">about us</a></li>
-        <li><a href="recruitment.html">Recruitment</a></li>
-        <li><a href="programming.html">Programming</a></li>
-        <li><a href="https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/">Contact</a></li>
-      </ul>
-      <ul>
-        <li><a href="#about"><u>特定商法</u></a></li>
-        <li><a href="privacy.html"><u>プライバシポリシー</u></a></li>
-      </ul>
-    </div>
-    <div class="fr">
-      <button
-        onclick="location.href='https://tayori.com/form/f8b5fbe3aac196e7d637e53b17349777fa887ec6/'">Contact</button>
-      <br>
-      <small>Copyright 2024 株式会社エイ・シー<br>All Righta Reserved</small>
-    </div>
-  </div>
+    </div> 
+  </div> 
 </body>
 
 </html>

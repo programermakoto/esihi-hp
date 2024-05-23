@@ -227,7 +227,7 @@ nav .inner li a {
   width: 70%;
   margin-top: 10%;
   margin: 0 auto;
-  height: 100vh;
+  height: 80vh;
 }
 .sec03 h1 {
   font-size: 5rem;
@@ -266,10 +266,13 @@ nav .inner li a {
 }
 .sec03 .company-profile {
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 .sec03 .company-profile h1 {
+  box-sizing: border-box;
   margin-left: 15%;
+  font-size: 4rem;
+  width: 100%;
 }
 .sec03 .company-profile table {
   width: 70%;
@@ -277,9 +280,22 @@ nav .inner li a {
   background-color: rgba(157, 156, 156, 0.079);
   border-collapse: collapse;
 }
+.sec03 .company-profile th {
+  font-size: 20px;
+}
 .sec03 .company-profile td {
   padding: 16.5px 20px;
+  font-size: 20px;
   border-bottom: 1px solid #eee;
+}
+
+.map {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+.map iframe {
+  width: 100%;
 }
 
 .footer {
@@ -331,4 +347,209 @@ nav .inner li a {
   background-color: white;
   color: black;
   border: 1px solid black;
+}
+
+@media (min-width: 0) and (max-width: 390px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .sec01 {
+    position: relative;
+    flex-direction: column;
+  }
+  .sec01 .title-img {
+    width: 100%;
+  }
+  .sec01 .title-img img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .sec01 .title {
+    width: 40%;
+  }
+  .sec01 .title h1 {
+    font-size: 3rem;
+    padding: 0 20px;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+  }
+  .sec01 .title small {
+    margin: 0;
+    padding: 0 20px;
+    position: absolute;
+    top: 30%;
+  }
+  .sec02 {
+    width: 100%;
+    padding: 0px;
+    margin: 0;
+  }
+  .sec02 h1 {
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+  }
+  .sec02 h3 {
+    margin: 0px;
+    padding: 20px;
+  }
+  .sec02 p {
+    width: 100%;
+    margin: 0;
+    font-size: 1em;
+    padding: 20px;
+  }
+  .sec03 {
+    width: 100%;
+  }
+  .sec03 .vision-container {
+    width: 100%;
+    padding: 10px;
+    margin-top: 0;
+  }
+  .sec03 h1 {
+    box-sizing: border-box;
+    font-size: 1rem;
+    width: 100%;
+    padding: 20px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+  }
+  .sec03 .vision {
+    font-size: 10px;
+  }
+  .sec03 .company-profile {
+    width: 100%;
+  }
+  .sec03 .company-profile h1 {
+    padding: 0 10px;
+    margin: 0;
+    font-size: 1.8rem;
+    width: 100%;
+  }
+  .sec03 .company-profile table {
+    width: 90%;
+    margin: 10% auto 50px;
+  }
+  .sec03 .company-profile th {
+    font-size: 10px;
+  }
+  .sec03 .company-profile td {
+    padding: 16.5px 10px;
+    font-size: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  .map {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+  .map iframe {
+    width: 100%;
+    height: 200px;
+  }
+  .footer {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+  }
+  .footer .fl {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .footer .fl h3 {
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .footer .fl ul {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+  }
+  .footer .fl ul li {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 2px auto;
+    border: 1px solid;
+    border-right: none;
+    border-top: none;
+    border-left: 3px solid;
+  }
+  .footer .fl ul a {
+    box-sizing: border-box;
+    color: black;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  .footer .fr {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .footer .fr small {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+  }
+  .footer .fr button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+  .nv {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .nv .inner {
+    padding: 10px;
+    margin: 0;
+  }
+  .nv .inner ul {
+    list-style: none;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+  }
+  .nv .inner ul h2 {
+    padding: 0px;
+    font-size: 15px;
+  }
+  .nv .inner ul p {
+    padding: 5px;
+    text-align: center;
+    font-size: 10px;
+  }
+  .nv .inner ul li {
+    width: 99%;
+    height: 100px;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 3px 10px;
+  }
+  .nv .inner ul li a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100px;
+    font-size: 15px;
+  }
 }/*# sourceMappingURL=about.css.map */

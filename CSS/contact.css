@@ -1,0 +1,33 @@
+
+.contact-form-psr {
+  position: relative;
+}
+.contact-form-psr .f-t {
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+}
+.contact-form-psr .f-t h1 {
+  text-align: center;
+  padding-top: 20px;
+}
+.contact-form-psr .f-b {
+  background-color: white;
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  bottom: 0%;
+  z-index: 2;
+  text-align: center;
+}
+.contact-form-psr .f-b p {
+  border-top: 1px solid;
+  padding: 20px 0;
+}
+.contact-form-psr .f-b .last-form {
+  width: 100%;
+  background-color: white;
+}
