@@ -409,9 +409,8 @@
 
   .sec01 {
     padding: 10%;
-    height: 70vh;
-    writing-mode: horizontal-tb;
-  }
+    height: 19vh;
+    writing-mode: horizontal-tb;}
 
   .sec01 p {
     font-size: 0.8rem;

@@ -213,7 +213,7 @@ nav .inner li a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .sec01 .title-img {
@@ -270,6 +270,7 @@ nav .inner li a {
 }
 
 .sec03 {
+
   width: 100%;
   overflow-x: hidden;
 }
@@ -496,14 +497,16 @@ nav .inner li a {
     font-size: 1em;
     padding: 20px;
   }
+
   .sec03 {
     width: 100%;
   }
+
   .sec03 .vision-container {
     width: 100%;
     padding: 10px;
     margin-top: 0;
-    height: 60vh;
+    height: 80vh;
   }
   .sec03 h1 {
     -webkit-box-sizing: border-box;
@@ -538,6 +541,7 @@ nav .inner li a {
     font-size: 12px;
     border-bottom: 1px solid #eee;
   }
+
   .map {
     width: 80%;
     display: block;
