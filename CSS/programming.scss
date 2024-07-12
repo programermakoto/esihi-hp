@@ -169,7 +169,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50vw;
+  width: 40vw;
   height: 100%;
   background-size: cover;
   background-position: center;
@@ -613,14 +613,6 @@ header {
 
 .common-4 {
   height: auto;
-  .about-inner {
-    position: relative;
-    background-attachment: fixed;
-    background-image: url(../images/flower.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 60vh;
-
     h1 {
       width: 100%;
       color: rgba(0, 0, 0, 0.471);
@@ -629,7 +621,7 @@ header {
       position: absolute;
       top: 20%;
     }
-  }
+   
   a {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.471);
@@ -933,7 +925,7 @@ header {
         flex-wrap: wrap;
         li {
           box-sizing: border-box;
-          width: 60%;
+          width: 100%;
           margin: 2px auto;
           border: 1px solid;
           border-right: none;
@@ -965,7 +957,7 @@ header {
       button {
         display: block;
         margin: 0 auto;
-        padding: 10px 20px;
+        padding: 10px 60px;
       }
     }
   }
@@ -1015,6 +1007,11 @@ header {
             height: 100px;
             font-size: 15px;
           }
+         
+        }
+        .add-privacy a{
+          font-size: 11px;
+          font-weight: bold;
         }
       }
     }

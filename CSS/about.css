@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -22,26 +23,34 @@ nav {
   top: 0;
   left: -300px;
   opacity: 0;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   z-index: 5;
 }
+
 nav .inner {
   padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 nav .inner ul {
   list-style: none;
   width: 100%;
   height: 100vh;
 }
+
 nav .inner ul h2 {
   text-align: center;
   padding: 30px;
 }
+
 nav .inner ul p {
   padding: 10px;
   text-align: center;
 }
+
 nav .inner li {
   background-color: white;
   width: 95%;
@@ -49,11 +58,14 @@ nav .inner li {
   text-align: center;
   margin-bottom: 10px;
 }
+
 nav .inner li :hover {
   background-color: black;
   color: white;
+  -webkit-transition: all 1.1s;
   transition: all 1.1s;
 }
+
 nav .inner li a {
   padding: 40px;
   display: block;
@@ -61,7 +73,8 @@ nav .inner li a {
   text-decoration: none;
   color: black;
   font-size: 30px;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .toggle {
@@ -74,6 +87,7 @@ nav .inner li a {
   z-index: 3;
   cursor: pointer;
 }
+
 .toggle span {
   position: absolute;
   display: block;
@@ -81,15 +95,19 @@ nav .inner li a {
   width: 30px;
   height: 2px;
   background-color: black;
-  transition-duration: all 0.5s;
+  -webkit-transition-duration: all 0.5s;
+          transition-duration: all 0.5s;
   border-radius: 4px;
 }
+
 .toggle :nth-child(1) {
   top: 4px;
 }
+
 .toggle :nth-child(2) {
   top: 14px;
 }
+
 .toggle :nth-child(3) {
   bottom: 4px;
 }
@@ -99,7 +117,8 @@ nav .inner li a {
 }
 
 .open .toggle span:nth-child(1) {
-  transform: translateY(10px) rotate(-315deg);
+  -webkit-transform: translateY(10px) rotate(-315deg);
+          transform: translateY(10px) rotate(-315deg);
 }
 
 .open .toggle span:nth-child(2) {
@@ -107,17 +126,19 @@ nav .inner li a {
 }
 
 .open .toggle span:nth-child(3) {
-  transform: translateY(-10px) rotate(315deg);
+  -webkit-transform: translateY(-10px) rotate(315deg);
+          transform: translateY(-10px) rotate(315deg);
 }
 
 #mask {
   display: none;
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .open #mask {
   display: block;
-  background-color: rgba(0, 0, 0, 0.831372549);
+  background-color: #000000d4;
   width: 100%;
   height: 100%;
   top: 0;
@@ -128,70 +149,93 @@ nav .inner li a {
 .animate {
   opacity: 0;
   /*初期値は見えなく*/
+  -webkit-transition: opacity 2s, -webkit-transform 0.5s;
+  transition: opacity 2s, -webkit-transform 0.5s;
   transition: opacity 2s, transform 0.5s;
+  transition: opacity 2s, transform 0.5s, -webkit-transform 0.5s;
   /*見えるようにするまでの時間指定*/
 }
 
 .animate.sl {
-  transform: translateX(-200px);
+  -webkit-transform: translateX(-200px);
+          transform: translateX(-200px);
   /*左に200px*/
 }
 
 .animate.delay {
-  transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
   /*0.5s遅らせる*/
 }
 
 .animate.delay-more {
-  transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
 }
 
 .animate.delay-more-more {
-  transition-delay: 0.6s;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
 }
 
 .animate.delay-more-more-more {
-  transition-delay: 0.8s;
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
 }
 
 .animate.delay-more-more-more-more {
-  transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
 }
 
 .animate.delay-more-more-more-more-more {
-  transition-delay: 1.2s;
+  -webkit-transition-delay: 1.2s;
+          transition-delay: 1.2s;
 }
 
 .animate.delay-more3 {
-  transition-delay: 1.4s;
+  -webkit-transition-delay: 1.4s;
+          transition-delay: 1.4s;
 }
 
 .animate.appear {
   opacity: 1;
   /*jsでクラスついた時に見せる*/
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
   /*移動していたものを戻す*/
 }
 
 .sec01 {
   width: 100%;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  position: relative;
+  overflow-x: hidden;
 }
+
 .sec01 .title-img {
-  width: 60%;
+  width: 80%;
 }
+
 .sec01 .title-img img {
   height: 100vh;
 }
+
 .sec01 .title {
-  width: 40%;
+  position: absolute;
+  top: 10%;
+  left: 60%;
 }
+
 .sec01 .title h1 {
   font-size: 7rem;
   padding: 30px 30px 0;
   margin-top: 50%;
 }
+
 .sec01 .title small {
   margin-left: 30px;
 }
@@ -199,22 +243,27 @@ nav .inner li a {
 .sec02 {
   width: 100%;
   padding: 40px;
+  overflow-x: hidden;
 }
+
 .sec02 h1 {
   font-size: 2.8rem;
   width: 50%;
   padding: 20px;
   margin-left: 30px;
 }
+
 .sec02 h3 {
   margin-left: 50px;
 }
+
 .sec02 p {
   width: 70%;
-  margin: 40px 0 0 30%;
+  margin: 40px 0 0 20%;
   font-size: 25px;
   padding: 20px 0;
 }
+
 .sec02 .vision-container {
   text-align: center;
   max-width: 600px;
@@ -222,13 +271,16 @@ nav .inner li a {
 
 .sec03 {
   width: 100%;
+  overflow-x: hidden;
 }
+
 .sec03 .vision-container {
   width: 70%;
   margin-top: 10%;
   margin: 0 auto;
-  height: 80vh;
+  height: 90vh;
 }
+
 .sec03 h1 {
   font-size: 5rem;
   width: 50%;
@@ -236,53 +288,73 @@ nav .inner li a {
   margin-left: 20px;
   margin-bottom: 50px;
 }
+
 .sec03 .vision {
   font-size: 30px;
   background-color: #fff;
   margin: 10px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
 }
+
 .sec03 .vision:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .sec03 #client-first {
   border-left: 20px solid #007bff;
 }
+
 .sec03 #challenge {
   border-left: 20px solid #28a745;
 }
+
 .sec03 #trust {
   border-left: 20px solid #ffc107;
 }
+
 .sec03 #accountability {
   border-left: 20px solid #17a2b8;
 }
+
 .sec03 #never-settle {
   border-left: 20px solid #dc3545;
 }
+
 .sec03 .company-profile {
   width: 100%;
   height: auto;
 }
+
 .sec03 .company-profile h1 {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: 15%;
   font-size: 4rem;
   width: 100%;
 }
+
 .sec03 .company-profile table {
-  width: 70%;
+  width: 80%;
   margin: 10% auto 50px;
   background-color: rgba(157, 156, 156, 0.079);
   border-collapse: collapse;
 }
+
 .sec03 .company-profile th {
   font-size: 20px;
+  padding: 10px;
 }
+
 .sec03 .company-profile td {
   padding: 16.5px 20px;
   font-size: 20px;
@@ -294,6 +366,7 @@ nav .inner li a {
   display: block;
   margin: 0 auto;
 }
+
 .map iframe {
   width: 100%;
 }
@@ -302,25 +375,35 @@ nav .inner li a {
   width: 100%;
   height: 40vh;
   padding: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .footer a {
   text-decoration: none;
 }
+
 .footer .fl {
   width: 80%;
   height: 100%;
 }
+
 .footer .fl h3 {
   margin: 2%;
 }
+
 .footer .fl ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
+
 .footer .fl ul li {
   margin-top: 20px;
 }
+
 .footer .fl ul a {
   color: black;
   display: inline-block;
@@ -329,20 +412,24 @@ nav .inner li a {
   padding: 10px 20px;
   font-size: 15px;
 }
+
 .footer .fr small {
   line-height: 2;
 }
+
 .footer .fr button {
   font-size: 20px;
   font-weight: 500;
   margin: 20px 0 40px 0px;
   padding: 20px 60px;
+  -webkit-transition: 0.4s;
   transition: 0.4s;
   cursor: pointer;
   color: white;
   background: rgba(0, 0, 0, 0.72);
   border: 1px solid white;
 }
+
 .footer .fr button:hover {
   background-color: white;
   color: black;
@@ -353,11 +440,15 @@ nav .inner li a {
   * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .sec01 {
     position: relative;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .sec01 .title-img {
     width: 100%;
@@ -370,20 +461,19 @@ nav .inner li a {
        object-position: left;
   }
   .sec01 .title {
-    width: 40%;
+    width: 60%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
   }
   .sec01 .title h1 {
     font-size: 3rem;
     padding: 0 20px;
     margin: 0;
-    position: absolute;
-    top: 20%;
   }
   .sec01 .title small {
     margin: 0;
     padding: 0 20px;
-    position: absolute;
-    top: 30%;
   }
   .sec02 {
     width: 100%;
@@ -413,9 +503,11 @@ nav .inner li a {
     width: 100%;
     padding: 10px;
     margin-top: 0;
+    height: 60vh;
   }
   .sec03 h1 {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: 1rem;
     width: 100%;
     padding: 20px;
@@ -423,7 +515,7 @@ nav .inner li a {
     margin-bottom: 0px;
   }
   .sec03 .vision {
-    font-size: 10px;
+    font-size: 15px;
   }
   .sec03 .company-profile {
     width: 100%;
@@ -435,7 +527,7 @@ nav .inner li a {
     width: 100%;
   }
   .sec03 .company-profile table {
-    width: 90%;
+    width: 99%;
     margin: 10% auto 50px;
   }
   .sec03 .company-profile th {
@@ -443,7 +535,7 @@ nav .inner li a {
   }
   .sec03 .company-profile td {
     padding: 16.5px 10px;
-    font-size: 10px;
+    font-size: 12px;
     border-bottom: 1px solid #eee;
   }
   .map {
@@ -460,7 +552,10 @@ nav .inner li a {
     height: auto;
     padding: 0;
     margin: 0;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .footer .fl {
     width: 100%;
@@ -470,19 +565,24 @@ nav .inner li a {
   }
   .footer .fl h3 {
     text-align: center;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 20px;
   }
   .footer .fl ul {
     width: 80%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .footer .fl ul li {
-    box-sizing: border-box;
-    width: 60%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
     margin: 2px auto;
     border: 1px solid;
     border-right: none;
@@ -490,7 +590,8 @@ nav .inner li a {
     border-left: 3px solid;
   }
   .footer .fl ul a {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     color: black;
     display: inline-block;
     width: 100%;
@@ -500,7 +601,8 @@ nav .inner li a {
     text-decoration: none;
   }
   .footer .fr {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     padding: 20px;
   }
   .footer .fr small {
@@ -511,7 +613,7 @@ nav .inner li a {
   .footer .fr button {
     display: block;
     margin: 0 auto;
-    padding: 10px 20px;
+    padding: 10px 60px;
   }
   .nv {
     width: 100%;
@@ -542,14 +644,21 @@ nav .inner li a {
     width: 99%;
     height: 100px;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0 3px 10px;
   }
   .nv .inner ul li a {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: block;
     width: 100%;
     height: 100px;
     font-size: 15px;
   }
-}/*# sourceMappingURL=about.css.map */
+  .nv .inner ul .add-privacy a {
+    font-size: 11px;
+    font-weight: bold;
+  }
+}
+/*# sourceMappingURL=about.css.map */

@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Times New Roman", Times, serif;
-}
+
+  }
+
 // ハンバーガーJS------------------------------------------------------------------
 .open nav {
   left: 0;
@@ -164,31 +166,37 @@ nav {
 .animate.delay-more-more-more {
   transition-delay: 0.8s;
 }
+
 .animate.delay-more-more-more-more {
   transition-delay: 1s;
 }
+
 .animate.delay-more-more-more-more-more {
   transition-delay: 1.2s;
 }
+
 .animate.delay-more3 {
   transition-delay: 1.4s;
 }
+
 .animate.appear {
   opacity: 1;
   /*jsでクラスついた時に見せる*/
   transform: none;
   /*移動していたものを戻す*/
 }
+
 // sec01------------------------------------------------------------------
 
 .sec01 {
   width: 100%;
   height: 100vh;
-
   display: flex;
+  position: relative;
+  overflow-x: hidden;
 
   .title-img {
-    width: 60%;
+    width: 80%;
 
     img {
       height: 100vh;
@@ -196,7 +204,9 @@ nav {
   }
 
   .title {
-    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 60%;
 
     h1 {
       font-size: 7rem;
@@ -213,7 +223,7 @@ nav {
 .sec02 {
   width: 100%;
   padding: 40px;
-
+  overflow-x: hidden;
   h1 {
     font-size: 2.8rem;
     width: 50%;
@@ -227,9 +237,10 @@ nav {
 
   p {
     width: 70%;
-    margin: 40px 0 0 30%;
+    margin: 40px 0 0 20%;
     font-size: 25px;
     padding: 20px 0;
+
   }
 
   .vision-container {
@@ -240,12 +251,12 @@ nav {
 
 .sec03 {
   width: 100%;
-
+  overflow-x: hidden;
   .vision-container {
     width: 70%;
     margin-top: 10%;
     margin: 0 auto;
-    height:80vh;
+    height: 90vh;
   }
 
   h1 {
@@ -294,21 +305,26 @@ nav {
   .company-profile {
     width: 100%;
     height: auto;
+
     h1 {
       box-sizing: border-box;
       margin-left: 15%;
       font-size: 4rem;
       width: 100%;
     }
+
     table {
-      width: 70%;
+      width: 80%;
       margin: 10% auto 50px;
       background-color: rgba(157, 156, 156, 0.079);
       border-collapse: collapse;
     }
+
     th {
       font-size: 20px;
+      padding: 10px;
     }
+
     td {
       // text-align: center;
       padding: 16.5px 20px;
@@ -317,35 +333,43 @@ nav {
     }
   }
 }
+
 .map {
   width: 80%;
   display: block;
   margin: 0 auto;
 
-  iframe { 
+  iframe {
     width: 100%;
   }
 }
+
 .footer {
   width: 100%;
   height: 40vh;
   padding: 90px;
   display: flex;
+
   a {
     text-decoration: none;
   }
+
   .fl {
     width: 80%;
     height: 100%;
+
     h3 {
       margin: 2%;
     }
+
     ul {
       display: flex;
       list-style: none;
+
       li {
         margin-top: 20px;
       }
+
       a {
         color: black;
         display: inline-block;
@@ -356,10 +380,12 @@ nav {
       }
     }
   }
+
   .fr {
     small {
       line-height: 2;
     }
+
     button {
       font-size: 20px;
       font-weight: 500;
@@ -387,13 +413,16 @@ nav {
     padding: 0;
     box-sizing: border-box;
   }
+
   // sec01------------------------------------------------------------------
 
   .sec01 {
     position: relative;
     flex-direction: column;
+
     .title-img {
       width: 100%;
+
       img {
         width: 100%;
         object-fit: cover;
@@ -402,21 +431,21 @@ nav {
     }
 
     .title {
-      width: 40%;
-
+      width: 60%;
+        position: absolute;
+        top: 30%;
+        left: 10%;
       h1 {
         font-size: 3rem;
         padding: 0 20px;
         margin: 0;
-        position: absolute;
-        top: 20%;
+
       }
 
       small {
         margin: 0;
         padding: 0 20px;
-        position: absolute;
-        top: 30%;
+
       }
     }
   }
@@ -448,10 +477,12 @@ nav {
 
   .sec03 {
     width: 100%;
+
     .vision-container {
       width: 100%;
       padding: 10px;
       margin-top: 0;
+      height: 60vh;
     }
 
     h1 {
@@ -464,42 +495,48 @@ nav {
     }
 
     .vision {
-      font-size: 10px;
+      font-size: 15px;
     }
 
     .company-profile {
       width: 100%;
+
       h1 {
         padding: 0 10px;
         margin: 0;
         font-size: 1.8rem;
         width: 100%;
       }
+
       table {
-        width: 90%;
+        width: 99%;
         margin: 10% auto 50px;
       }
+
       th {
         font-size: 10px;
       }
+
       td {
         // text-align: center;
         padding: 16.5px 10px;
-        font-size: 10px;
+        font-size: 12px;
         border-bottom: 1px solid #eee;
       }
     }
   }
+
   .map {
     width: 80%;
     display: block;
     margin: 0 auto;
-  
-    iframe { 
+
+    iframe {
       width: 100%;
       height: 200px;
     }
   }
+
   // footer------------------------------------------------------
   .footer {
     width: 100%;
@@ -507,11 +544,13 @@ nav {
     padding: 0;
     margin: 0;
     flex-direction: column;
+
     .fl {
       width: 100%;
       height: 100%;
       padding: 0;
       margin: 0;
+
       h3 {
         text-align: center;
         box-sizing: border-box;
@@ -524,9 +563,10 @@ nav {
         display: flex;
         list-style: none;
         flex-wrap: wrap;
+
         li {
           box-sizing: border-box;
-          width: 60%;
+          width: 100%;
           margin: 2px auto;
           border: 1px solid;
           border-right: none;
@@ -550,23 +590,27 @@ nav {
     .fr {
       box-sizing: border-box;
       padding: 20px;
+
       small {
         margin: 0;
         padding: 0;
         line-height: 0;
       }
+
       button {
         display: block;
         margin: 0 auto;
-        padding: 10px 20px;
+        padding: 10px 60px;
       }
     }
   }
+
   // nav-----------
   .nv {
     width: 100%;
     margin: 0;
     padding: 0;
+
     .inner {
       padding: 10px;
       margin: 0;
@@ -577,6 +621,7 @@ nav {
         margin: 0;
         padding: 0;
         height: 100vh;
+
         h2 {
           padding: 0px;
           font-size: 15px;
@@ -594,6 +639,7 @@ nav {
           padding: 0;
           box-sizing: border-box;
           margin: 0 3px 10px;
+
           a {
             box-sizing: border-box;
             display: block;
@@ -601,8 +647,17 @@ nav {
             height: 100px;
             font-size: 15px;
           }
+
+
         }
+
+
       }
     }
+  }
+
+  .nv .inner ul .add-privacy a {
+    font-size: 11px;
+    font-weight: bold;
   }
 }
